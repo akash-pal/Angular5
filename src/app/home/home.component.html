@@ -1,0 +1,8 @@
+<div class="main-conatiner">
+  <div>Main Container</div>
+  <div>UserName:{{userName}}</div>
+  <!-- <input type="text" (keyup)="findName($event)"> -->
+  <span>Names:{{names}}</span>
+  <div>Selected Name: {{selectedName}}</div>
+  <app-names [names]='names' (selected)="showSelected($event)"></app-names>
+</div>

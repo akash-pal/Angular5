@@ -1,0 +1,5 @@
+<div class="name-container">
+  <div>Name Container</div>
+  <div>Selected Name: {{selectedName}}</div>
+  <app-name-tag *ngFor="let name1 of names" [name]="name1" (selected)="showSelected($event)"></app-name-tag>
+</div>
